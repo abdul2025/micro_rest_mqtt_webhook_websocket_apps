@@ -10,6 +10,7 @@ env:
   AWS_REGION: us-east-1
   ECR_REPOSITORIES: "rest-api-lambda websocket-lambda webhook-lambda mqtt-lambda"
 
+
 jobs:
   build_and_push_images:
     runs-on: ubuntu-latest
