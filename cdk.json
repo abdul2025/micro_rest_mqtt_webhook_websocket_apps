@@ -1,0 +1,8 @@
+{
+    "app": "python3 app.py",
+    "context": {
+      "cache_ttl": 10,
+      "throttling_rate": 1000,
+      "throttling_burst": 500
+    }
+  }
