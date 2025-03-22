@@ -1,0 +1,1 @@
+## Microservice for communiction protocals as AWS Lambda, Apigetway, CDK, ECR.
