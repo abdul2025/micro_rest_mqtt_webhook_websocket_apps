@@ -6,8 +6,8 @@ on:
       - main
 
 env:
-  AWS_ACCOUNT_ID: "<your-aws-account-id>"
-  AWS_REGION: "<your-aws-region>"
+  AWS_ACCOUNT_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_REGION: us-east-1
   ECR_REPOSITORIES: "rest-api-lambda websocket-lambda webhook-lambda mqtt-lambda"
 
 jobs:
