@@ -19,7 +19,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 20
 
       - name: Install CDK
         run: npm install -g aws-cdk
@@ -33,9 +33,6 @@ jobs:
 
       - name: Bootstrap CDK
         run: cdk bootstrap aws://${{ secrets.AWS_ACCOUNT_ID }}/${{ env.AWS_REGION }}
-
-      - name: Deploy CDK stack (creates ECR repos)
-        run: cdk deploy --require-approval never
 
 
   update_cdk_stack:
